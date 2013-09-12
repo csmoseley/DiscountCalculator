@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">Discount Calculator</string>
+    <string name="action_settings">Settings</string>
+    <string name="listedprice">Listed Price</string>
+    <string name="DiscountAmount">Discount %:</string>
+    <string name="TwentyFive">25%</string>
+    <string name="Fifty">50%</string>
+    <string name="Ten">10%</string>
+    <string name="customText">Custom</string>
+
+</resources>
