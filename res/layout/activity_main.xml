@@ -14,7 +14,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:paddingBottom="10dp" >
+        android:paddingBottom="@dimen/linePadding" >
 
         <TextView
             android:id="@+id/textView2"
@@ -24,10 +24,11 @@
             android:text="@string/listedprice" />
 
         <EditText
-            android:id="@+id/editText1"
+            android:id="@+id/fieldEntry"
             android:layout_width="0dip"
             android:layout_height="wrap_content"
             android:layout_weight="7"
+            android:hint="@string/editTextHint"
             android:inputType="numberDecimal" >
 
             <requestFocus />
@@ -39,7 +40,7 @@
         android:layout_height="wrap_content"
         android:gravity="center_vertical|center_horizontal"
         android:orientation="horizontal"
-        android:paddingBottom="10dp" >
+        android:paddingBottom="@dimen/linePadding" >
 
         <TextView
             android:id="@+id/textView1"
@@ -58,33 +59,37 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="true"
+                android:onClick="updateValue"
                 android:text="@string/Ten"
                 android:textAppearance="?android:attr/textAppearanceSmall"
-                android:textSize="12sp" />
+                android:textSize="@dimen/fontSizePercentsDiscount" />
 
             <RadioButton
                 android:id="@+id/radio1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="updateValue"
                 android:text="@string/TwentyFive"
                 android:textAppearance="?android:attr/textAppearanceSmall"
-                android:textSize="12sp" />
+                android:textSize="@dimen/fontSizePercentsDiscount" />
 
             <RadioButton
                 android:id="@+id/radio2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="updateValue"
                 android:text="@string/Fifty"
                 android:textAppearance="?android:attr/textAppearanceSmall"
-                android:textSize="12sp" />
+                android:textSize="@dimen/fontSizePercentsDiscount" />
 
             <RadioButton
                 android:id="@+id/radio3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="updateValue"
                 android:text="@string/customText"
                 android:textAppearance="?android:attr/textAppearanceSmall"
-                android:textSize="12sp" />
+                android:textSize="@dimen/fontSizePercentsDiscount" />
         </RadioGroup>
     </LinearLayout>
 
@@ -93,7 +98,7 @@
         android:layout_height="wrap_content"
         android:gravity="center_vertical|center_horizontal"
         android:orientation="horizontal"
-        android:paddingBottom="10dp" >
+        android:paddingBottom="@dimen/linePadding" >
 
         <TextView
             android:id="@+id/textView3"
@@ -106,7 +111,65 @@
             android:id="@+id/seekBar1"
             android:layout_width="0dip"
             android:layout_height="wrap_content"
-            android:layout_weight="4" />
+            android:layout_weight="3.35"
+            android:max="100"
+            android:progress="25" />
+
+        <TextView
+            android:id="@+id/customValueText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/customValue" />
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/linePadding" >
+
+        <TextView
+            android:id="@+id/textSaved"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="@string/youSaved" />
+
+        <TextView
+            android:id="@+id/dynSaveText"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:text="@string/dynSaved" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/linePadding" >
+
+        <TextView
+            android:id="@+id/textPay"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="@string/youPay" />
+
+        <TextView
+            android:id="@+id/dynPayText"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:text="@string/dynPay" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="exitApp"
+        android:text="@string/exit" />
 
 </LinearLayout>

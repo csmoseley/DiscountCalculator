@@ -19,13 +19,19 @@ public final class R {
          */
         public static final int activity_horizontal_margin=0x7f040000;
         public static final int activity_vertical_margin=0x7f040001;
+        public static final int fontSizePercentsDiscount=0x7f040002;
+        public static final int linePadding=0x7f040003;
     }
     public static final class drawable {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_settings=0x7f08000b;
-        public static final int editText1=0x7f080002;
+        public static final int action_settings=0x7f080011;
+        public static final int customValueText=0x7f08000b;
+        public static final int dynPayText=0x7f08000f;
+        public static final int dynSaveText=0x7f08000d;
+        public static final int exitButton=0x7f080010;
+        public static final int fieldEntry=0x7f080002;
         public static final int linlayout=0x7f080000;
         public static final int radio0=0x7f080005;
         public static final int radio1=0x7f080006;
@@ -33,6 +39,8 @@ public final class R {
         public static final int radio3=0x7f080008;
         public static final int radioGroup1=0x7f080004;
         public static final int seekBar1=0x7f08000a;
+        public static final int textPay=0x7f08000e;
+        public static final int textSaved=0x7f08000c;
         public static final int textView1=0x7f080003;
         public static final int textView2=0x7f080001;
         public static final int textView3=0x7f080009;
@@ -51,7 +59,14 @@ public final class R {
         public static final int action_settings=0x7f050001;
         public static final int app_name=0x7f050000;
         public static final int customText=0x7f050007;
+        public static final int customValue=0x7f050008;
+        public static final int dynPay=0x7f05000b;
+        public static final int dynSaved=0x7f05000c;
+        public static final int editTextHint=0x7f05000e;
+        public static final int exit=0x7f05000d;
         public static final int listedprice=0x7f050002;
+        public static final int youPay=0x7f05000a;
+        public static final int youSaved=0x7f050009;
     }
     public static final class style {
         /** 
